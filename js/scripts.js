@@ -1,11 +1,8 @@
 $(function() {
-  $("#productDropdown").submit(function(event) {
-    event.preventDefault();
-    var selection = $("#products").val();
+  // $("#productDropdown").click(function(event) {
+  //   event.preventDefault();
 
-  $(".product").text(selection);
-
-  });
+  // });
 
   $("#information").submit(function(event) {
     event.preventDefault();
@@ -15,6 +12,7 @@ $(function() {
     var city = $("#city").val();
     var state = $("#state").val();
     var zip = $("#zip").val();
+    var selection = $("#products").val();
 
 
     $(".firstName").text(firstName);
@@ -23,7 +21,7 @@ $(function() {
     $(".city").text(city);
     $(".state").text(state);
     $(".zip").text(zip);
-
+    $(".product").text(selection);
 
     $("#receipt").show();
   });
